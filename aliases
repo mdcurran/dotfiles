@@ -1,0 +1,22 @@
+# General
+alias watch='watch '  # Allows watch to work with aliases, e.g. 'watch kgpo'
+
+# Git
+alias gbr='git branch'
+alias gbrd='git branch -d'
+alias gci='git commit'
+alias gco='git checkout'
+alias gcob='git checkout -b'
+alias glg='git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit'
+alias glog='git log'
+alias gp='git push'
+alias gpo='git push origin'
+alias gst='git status'
+
+# Kubernetes
+alias k='kubectl'
+alias k8s-ns='kubectl config set-context --current --namespace'
+alias kcuc='kubectl config current-context'
+alias kdpo='kubectl describe pods'
+alias kgpo='kubectl get pods'
+alias kgsvc='kubectl get svc'
