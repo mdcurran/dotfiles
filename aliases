@@ -1,7 +1,10 @@
 # General
+alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
+alias sudo='sudo '  # Allows aliases to be sudo'd
 alias watch='watch '  # Allows watch to work with aliases, e.g. 'watch kgpo'
 
 # Git
+alias g='git'
 alias gbr='git branch'
 alias gbrd='git branch -d'
 alias gci='git commit'
