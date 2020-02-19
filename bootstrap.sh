@@ -1,14 +1,39 @@
 #!/usr/bin/env bash
 
-# Copy aliases file to ~/.aliases
-cp aliases ~/.aliases
+# Check for Homebrew installation. If not installed, then install latest
+# version. macOS comes with a system version of Ruby that can be used for this.
+if ( brew --version ) < /dev/null > /dev/null 2>&1; then
+    echo 'Homebrew is already installed!'
+else
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
+fi
 
-for file in ~/.{aliases}; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file";
-done
-unset file;
+# Install the Cask extension for Homebrew (if not already installed).
+if ( brew cask --version; ) < /dev/null > /dev/null 2>&1; then
+    echo 'Caskroom tapped already'
+else
+    brew tap caskroom/cask;
+fi
 
-# Copy gitmessage file to ~/.gitmessage
-cp gitmessage ~/.gitmessage
-# Set the contents of ~/.gitmessage as the commit template
+# Check that the Homebrew bundle functionality is enabled, then install the
+# dependencies listed in the Brewfile.
+if ( brew bundle check; ) < /dev/null > /dev/null 2>&1; then
+    echo 'Brewfiles enabled'
+else
+    brew tap Homebrew/bundle;
+    brew bundle;
+fi
+
+# Clean-up and diagnose any potential problems.
+brew cleanup && brew prune && brew doctor
+
+# Copy .gitmessage to ~/.gitmessage.
+cp .gitmessage ~/.gitmessage
+# Set the contents of ~/.gitmessage as the commit template.
 git config --global commit.template ~/.gitmessage
+
+# Copy .aliases to ~/.aliases.
+cp .aliases ~/.aliases
+
+# Copy .zshrc to ~/.zshrc.
+cp .zshrc ~/.zshrc

@@ -23,12 +23,23 @@ alias gst='git status'
 alias k='kubectl'
 alias k8s-ns='kubectl config set-context --current --namespace'
 alias kcuc='kubectl config current-context'
+alias kdd='kubectl describe deployment'
 alias kdns='kubectl describe ns'
 alias kdpo='kubectl describe pods'
 alias kdsvc='kubectl describe svc'
+alias ked='kubectl edit deployment'
+alias kepo='kubectl edit pods'
+alias kesvc='kubectl edit svc'
+alias kgd='kubectl get deployment'
+alias kgdyaml='kubectl get deployment -o yaml'
 alias kgns='kubectl get ns'
 alias kgnsyaml='kubectl get ns -o yaml'
 alias kgpo='kubectl get pods'
 alias kgpoyaml='kubectl get pods -o yaml'
 alias kgsvc='kubectl get svc'
 alias kgsvcyaml='kubectl get svc -o yaml'
+alias kl='kubectl logs'
+
+# Hiding and showing files in Finder
+alias shf="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hhf="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
