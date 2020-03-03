@@ -4,6 +4,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 # Golang
+export GOPATH=${HOME}/go
 export PATH=${HOME}/go/bin:$PATH
 
 # Source the relevant files at the start of a new Shell session.
