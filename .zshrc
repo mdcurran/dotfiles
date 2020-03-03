@@ -11,3 +11,6 @@ for file in ~/.{aliases}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done
 unset file;
+
+# Enables scrolling when viewing files with bat
+export BAT_PAGER="less -RF"
