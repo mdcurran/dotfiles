@@ -1,5 +1,5 @@
 # General
-alias dc-'docker-compose '
+alias dc='docker-compose '
 alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
 alias sudo='sudo '  # Allows aliases to be sudo'd
 alias watch='watch '  # Allows watch to work with aliases, e.g. 'watch kgpo'
