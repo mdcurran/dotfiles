@@ -1,18 +1,27 @@
 # Ensures all applications to be installed to the ~/Applications directory.
 cask_args appdir: "~/Applications"
 
-brew "git"
+# Software
+brew "bat"
 brew "cask"
-brew "vim"
+brew "dive"
+brew "git"
 brew "go"
+brew "jq"
+brew "postgresql"
 brew "pyenv"
 brew "ripgrep"
-brew "bat"
+brew "stern"
 brew "terraform"
+brew "the_silver_searcher"
+brew "vim"
 
-cask "iterm2"
-cask "visual-studio-code"
+# Applications
 cask "docker"
-cask "spotify"
+cask "insomnia"
+cask "iterm2"
+cask "obsidian"
 cask "signal"
 cask "slack"
+cask "spotify"
+cask "visual-studio-code"

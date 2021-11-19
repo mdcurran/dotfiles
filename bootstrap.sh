@@ -27,10 +27,12 @@ fi
 # Clean-up and diagnose any potential problems.
 brew cleanup && brew prune && brew doctor
 
-# Copy .gitmessage to ~/.gitmessage.
+# Copy .gitmessage to ~/.gitmessage and set the contents of ~/.gitmessage as the commit template.
 cp .gitmessage ~/.gitmessage
-# Set the contents of ~/.gitmessage as the commit template.
 git config --global commit.template ~/.gitmessage
+# Set the default name and email for commits.
+git config --global user.name "Max Curran"
+git config --global user.email "maxcurran96@gmail.com"
 
 # Copy .aliases to ~/.aliases.
 cp .aliases ~/.aliases

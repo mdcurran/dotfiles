@@ -36,14 +36,12 @@ unset file;
 # OpenSSL Homebrew install
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 
-# Enables scrolling when viewing files with bat
-export BAT_PAGER="less -RF"
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/maxcurran/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/maxcurran/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/maxcurran/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/maxcurran/google-cloud-sdk/completion.zsh.inc'; fi
 
-# Helm 2
+# Helm
 export PATH="/usr/local/opt/helm@2/bin:$PATH"
+export PATH="/usr/local/opt/openssl@3/bin:$PATH"
