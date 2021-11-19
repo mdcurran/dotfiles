@@ -4,43 +4,31 @@ alias flush='killall -HUP mDNSResponder'
 alias sudo='sudo '  # Allows aliases to be sudo'd
 alias ugh='killall ControlStrip'
 alias watch='watch '  # Allows watch to work with aliases, e.g. 'watch kgpo'
+alias hrg='history | rg'
 
-# Git
-alias g='git'
-alias ga='git add'
+# Hiding and showing files in Finder
+alias shf="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hhf="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# Git (ones not defined in the oh-my-zsh plugin)
 alias gbr='git branch'
 alias gbrd='git branch -d'
 alias gci='git commit'
 alias gco='git checkout'
 alias gcob='git checkout -b'
-alias gd='git diff'
-alias gds='git diff --staged'
 alias glog='git log'
 alias gp='git push'
 alias gpo='git push origin'
-alias gst='git status'
 
-# Kubernetes
-alias k='kubectl'
+# Kubernetes (ones not defined in the oh-my-zsh plugin)
 alias k8s-ns='kubectl config set-context --current --namespace'
-alias kcuc='kubectl config current-context'
-alias kdd='kubectl describe deployment'
-alias kdns='kubectl describe ns'
 alias kdpo='kubectl describe pods'
 alias kdsvc='kubectl describe svc'
-alias ked='kubectl edit deployment'
 alias kepo='kubectl edit pods'
 alias kesvc='kubectl edit svc'
-alias kgd='kubectl get deployment'
 alias kgdyaml='kubectl get deployment -o yaml'
-alias kgns='kubectl get ns'
 alias kgnsyaml='kubectl get ns -o yaml'
 alias kgpo='kubectl get pods'
 alias kgpoyaml='kubectl get pods -o yaml'
 alias kgsvc='kubectl get svc'
 alias kgsvcyaml='kubectl get svc -o yaml'
-alias kl='kubectl logs'
-
-# Hiding and showing files in Finder
-alias shf="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hhf="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"

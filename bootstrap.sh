@@ -27,6 +27,9 @@ fi
 # Clean-up and diagnose any potential problems.
 brew cleanup && brew prune && brew doctor
 
+# Install oh-my-zsh.
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Copy .gitmessage to ~/.gitmessage and set the contents of ~/.gitmessage as the commit template.
 cp .gitmessage ~/.gitmessage
 git config --global commit.template ~/.gitmessage

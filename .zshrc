@@ -3,7 +3,20 @@ export ZSH="/Users/maxcurran/.oh-my-zsh"
 
 ZSH_THEME=robbyrussell
 
-plugins=(git)
+plugins=(
+  ag
+  docker
+  dotenv
+  gcloud
+  git
+  golang
+  history
+  iterm2
+  kubectl
+  postgres
+  ripgrep
+  rsync
+)
 
 source $ZSH/oh-my-zsh.sh
 
