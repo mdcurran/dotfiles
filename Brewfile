@@ -9,7 +9,7 @@ brew "dive"
 brew "git"
 brew "go"
 brew "jq"
-brew 'mas' # Mac App Store manager
+brew 'mas'  # Mac App Store manager
 brew "postgresql"
 brew "pyenv"
 brew "redis"
@@ -21,13 +21,11 @@ brew "vim"
 
 # Applications
 cask "discord"
-cask "docker"
-cask "google-chrome"  # I'm sorry
+cask "firefox"
 cask "insomnia"
 cask "iterm2"
 cask "obsidian"
 cask "signal"
-cask "slack"
 cask "spotify"
 cask "visual-studio-code"
 

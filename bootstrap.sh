@@ -12,7 +12,7 @@ fi
 if ( brew cask --version; ) < /dev/null > /dev/null 2>&1; then
     echo 'Caskroom tapped already'
 else
-    brew tap caskroom/cask;
+    brew tap homebrew/cask;
 fi
 
 # Check that the Homebrew bundle functionality is enabled, then install the
@@ -25,7 +25,7 @@ else
 fi
 
 # Clean-up and diagnose any potential problems.
-brew cleanup && brew prune && brew doctor
+brew cleanup && brew doctor
 
 # Install oh-my-zsh.
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
