@@ -12,6 +12,7 @@ brew "jq"
 brew 'mas'  # Mac App Store manager
 brew "postgresql"
 brew "pyenv"
+brew "rbenv"
 brew "redis"
 brew "ripgrep"
 brew "stern"

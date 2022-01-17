@@ -1,31 +1,7 @@
 #!/usr/bin/env bash
 
-# Check for Homebrew installation. If not installed, then install latest
-# version. macOS comes with a system version of Ruby that can be used for this.
-if ( brew --version ) < /dev/null > /dev/null 2>&1; then
-    echo 'Homebrew is already installed!'
-else
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
-fi
-
-# Install the Cask extension for Homebrew (if not already installed).
-if ( brew cask --version; ) < /dev/null > /dev/null 2>&1; then
-    echo 'Caskroom tapped already'
-else
-    brew tap homebrew/cask;
-fi
-
-# Check that the Homebrew bundle functionality is enabled, then install the
-# dependencies listed in the Brewfile.
-if ( brew bundle check; ) < /dev/null > /dev/null 2>&1; then
-    echo 'Brewfiles enabled'
-else
-    brew tap Homebrew/bundle;
-    brew bundle;
-fi
-
-# Clean-up and diagnose any potential problems.
-brew cleanup && brew doctor
+# Install and manage any Homebrew-related dependencies.
+sh brew_manager.sh
 
 # Install oh-my-zsh.
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
