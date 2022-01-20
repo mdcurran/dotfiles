@@ -18,3 +18,4 @@ cp .aliases ~/.aliases
 
 # Copy .zshrc to ~/.zshrc.
 cp .zshrc ~/.zshrc
+cp .zprofile ~/.zprofile
