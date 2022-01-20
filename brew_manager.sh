@@ -13,6 +13,7 @@ if ( brew cask --version; ) < /dev/null > /dev/null 2>&1; then
     echo 'Caskroom tapped already'
 else
     brew tap homebrew/cask;
+    brew tap homebrew/cask-fonts;
 fi
 
 # Check that the Homebrew bundle functionality is enabled, then install the

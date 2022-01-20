@@ -1,0 +1,7 @@
+{
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "vscode-icons",   
+}
