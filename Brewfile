@@ -3,16 +3,19 @@ cask_args appdir: "~/Applications"
 
 # Software
 brew "bat"
+brew "buildkit"
 brew "cask"
 brew "coreutils"  # Update the outdated default macOS ones
 brew "dive"
-brew "docker"
 brew "doctl"
 brew "git"
 brew "go"
+brew "httpie"
 brew "jq"
 brew "kubectl"
-brew 'mas'  # Mac App Store manager
+brew "mas"  # Mac App Store manager
+brew "node"
+brew "podman"
 brew "postgresql"
 brew "pyenv"
 brew "rbenv"
@@ -22,6 +25,7 @@ brew "stern"
 brew "terraform"
 brew "the_silver_searcher"
 brew "vim"
+brew "yarn"
 
 # Applications
 cask "cloudflare-warp"  # 1.1.1.1
