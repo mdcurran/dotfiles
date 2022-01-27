@@ -29,6 +29,7 @@ source ~/.aliases
 eval "$(pyenv init -)"
 
 # rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
