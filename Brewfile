@@ -11,6 +11,7 @@ brew "doctl"
 brew "git"
 brew "go"
 brew "httpie"
+brew "hugo"
 brew "jq"
 brew "kubectl"
 brew "mas"  # Mac App Store manager
