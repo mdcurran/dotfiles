@@ -1155,6 +1155,15 @@
             "appdir": "~/Applications"
           }
         }
+      },
+      "docker": {
+        "version": "4.4.2,73305",
+        "options": {
+          "full_name": "docker",
+          "args": {
+            "appdir": "~/Applications"
+          }
+        }
       }
     },
     "mas": {
@@ -1169,7 +1178,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.3.12",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "3b7db4457ac64a31e3bbffc54b04c4bd824a4a4a",
+        "Homebrew/homebrew-core": "ff3b020dbc90ab3d219d0c958415c91161b64619",
         "CLT": "13.2.0.0.1.1638488800",
         "Xcode": "13.1",
         "macOS": "12.1"
