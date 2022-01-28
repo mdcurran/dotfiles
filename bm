@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Ensure the Brewfile is available.
+cd $DOTFILES
+
 # Check for Homebrew installation. If not installed, then install latest
 # version. macOS comes with a system version of Ruby that can be used for this.
 if ( brew --version ) < /dev/null > /dev/null 2>&1; then
