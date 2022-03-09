@@ -15,6 +15,7 @@ brew "jq"
 brew "kubectl"
 brew "mas"  # Mac App Store manager
 brew "node"
+brew "pass"
 brew "postgresql"
 brew "pyenv"
 brew "rbenv"
@@ -34,6 +35,7 @@ cask "firefox"
 cask "insomnia"
 cask "iterm2"
 cask "obsidian"
+cask "raycast"
 cask "signal"
 cask "spotify"
 cask "visual-studio-code"
@@ -43,3 +45,4 @@ cask "font-jetbrains-mono"
 
 # Mac App Store
 mas "Magnet", id: 441258766
+mas "Things 3", id: 904280696
