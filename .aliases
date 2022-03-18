@@ -32,3 +32,12 @@ alias kgpo='kubectl get pods'
 alias kgpoyaml='kubectl get pods -o yaml'
 alias kgsvc='kubectl get svc'
 alias kgsvcyaml='kubectl get svc -o yaml'
+
+# note
+alias n='note'
+alias nn='note new'
+alias no='note open'
+alias nl='note list'
+alias nrm='note rm'
+alias nmv='note mv'
+alias ncat='note cat'
