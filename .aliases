@@ -1,10 +1,11 @@
 # General
 alias dc='docker-compose '
+alias dotfiles='cd $HOME/repositories/dotfiles'
 alias flush='killall -HUP mDNSResponder'
+alias hrg='history | rg'
 alias sudo='sudo '  # Allows aliases to be sudo'd
 alias ugh='killall ControlStrip'
 alias watch='watch '  # Allows watch to work with aliases, e.g. 'watch kgpo'
-alias hrg='history | rg'
 
 # Hiding and showing files in Finder
 alias shf="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -19,6 +20,7 @@ alias gcob='git checkout -b'
 alias glog='git log'
 alias gp='git push'
 alias gpo='git push origin'
+alias goops='git commit --amend --no-edit && git push --force-with-lease'
 
 # Kubernetes (ones not defined in the oh-my-zsh plugin)
 alias k8s-ns='kubectl config set-context --current --namespace'
