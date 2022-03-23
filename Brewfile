@@ -15,6 +15,7 @@ brew "jq"
 brew "kubectl"
 brew "mas"  # Mac App Store manager
 brew "node"
+brew "nvm"
 brew "mdcurran/taps/note"
 brew "pass"
 brew "postgresql"
