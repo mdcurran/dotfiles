@@ -1104,15 +1104,15 @@
         }
       },
       "ruby-build": {
-        "version": "20220218",
+        "version": "20220324",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "all": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/ruby-build/blobs/sha256:13f78a48eac15febdbb7b71d891c9259a372246e29ca7c3efbb47aa774ea24d9",
-              "sha256": "13f78a48eac15febdbb7b71d891c9259a372246e29ca7c3efbb47aa774ea24d9"
+              "url": "https://ghcr.io/v2/homebrew/core/ruby-build/blobs/sha256:9655e8c72d2c9a412d6ec92980eb9cf1e59608f26bb9dfa59b5749f9018e7213",
+              "sha256": "9655e8c72d2c9a412d6ec92980eb9cf1e59608f26bb9dfa59b5749f9018e7213"
             }
           }
         }
@@ -1147,7 +1147,7 @@
         }
       },
       "firefox": {
-        "version": "98.0.1",
+        "version": "98.0.2",
         "options": {
           "full_name": "firefox",
           "args": {
@@ -1183,7 +1183,7 @@
         }
       },
       "signal": {
-        "version": "5.35.0",
+        "version": "5.36.0",
         "options": {
           "full_name": "signal",
           "args": {
@@ -1275,9 +1275,9 @@
   "system": {
     "macos": {
       "monterey": {
-        "HOMEBREW_VERSION": "3.4.3-38-g02b0a45",
+        "HOMEBREW_VERSION": "3.4.3-49-g5b787e2",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "d418427b68c6fa0dc4b89f924b831c0556166c41",
+        "Homebrew/homebrew-core": "fdd82f191491af94550a8456fa10b01110efc9d4",
         "CLT": "13.2.0.0.1.1638488800",
         "Xcode": "13.2.1",
         "macOS": "12.1"
