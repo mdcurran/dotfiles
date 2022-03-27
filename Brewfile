@@ -42,6 +42,8 @@ cask "now-tv-player"
 cask "obsidian"
 cask "signal"
 cask "spotify"
+cask "unity"
+cask "unity-hub"
 cask "visual-studio-code"
 
 # Fonts
