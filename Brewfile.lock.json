@@ -1312,7 +1312,7 @@
         }
       },
       "unity": {
-        "version": "2021.2.17f1,efb8f635e7b1",
+        "version": "2021.2.18f1,0c6e675195cf",
         "options": {
           "full_name": "unity",
           "args": {
@@ -1332,9 +1332,9 @@
   "system": {
     "macos": {
       "monterey": {
-        "HOMEBREW_VERSION": "3.4.4-50-g3f4eef8",
+        "HOMEBREW_VERSION": "3.4.4-59-g3370929",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "e4126999478833236908b78b6da033edf716134d",
+        "Homebrew/homebrew-core": "37be2ac13da085f8cbe67273190eef95df6001c4",
         "CLT": "13.3.0.0.1.1645755326",
         "Xcode": "13.3",
         "macOS": "12.1"
