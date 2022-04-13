@@ -4,6 +4,7 @@ cask_args appdir: "~/Applications"
 # Software
 brew "bat"
 brew "cask"
+brew "choose-rust"
 brew "clang-format"
 brew "coreutils"  # Update the outdated default macOS ones
 brew "dive"
