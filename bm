@@ -31,3 +31,5 @@ fi
 
 # Clean-up and diagnose any potential problems.
 brew cleanup && brew doctor
+
+exit 0;
