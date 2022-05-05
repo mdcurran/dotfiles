@@ -1131,7 +1131,7 @@
         }
       },
       "signal": {
-        "version": "5.41.0",
+        "version": "5.42.0",
         "options": {
           "full_name": "signal",
           "args": {
@@ -1183,6 +1183,15 @@
             "appdir": "~/Applications"
           }
         }
+      },
+      "steam": {
+        "version": "4.0",
+        "options": {
+          "full_name": "steam",
+          "args": {
+            "appdir": "~/Applications"
+          }
+        }
       }
     },
     "mas": {
@@ -1196,9 +1205,9 @@
   "system": {
     "macos": {
       "monterey": {
-        "HOMEBREW_VERSION": "3.4.10-32-g6146564",
+        "HOMEBREW_VERSION": "3.4.10-38-g7e1f348",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "0ae6e219a8e6463753277c17de6c7578346ad23f",
+        "Homebrew/homebrew-core": "d375cac0473eff6c992622d3f3b496a8632d4d04",
         "CLT": "13.3.0.0.1.1645755326",
         "Xcode": "13.3",
         "macOS": "12.1"
