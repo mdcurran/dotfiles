@@ -9,6 +9,7 @@ brew "clang-format"
 brew "coreutils"  # Update the outdated default macOS ones
 brew "dive"
 brew "doctl"
+brew "flyctl"
 brew "git"
 brew "go"
 brew "httpie"
