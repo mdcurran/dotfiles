@@ -3,6 +3,7 @@ cask_args appdir: "~/Applications"
 
 # Software
 brew "bat"
+brew "benthos"
 brew "cask"
 brew "choose-rust"
 brew "clang-format"
