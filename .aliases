@@ -43,3 +43,7 @@ alias nl='note list'
 alias nrm='note rm'
 alias nmv='note mv'
 alias ncat='note cat'
+
+# Ruby
+alias be='bundle exec '
+alias ber='bundle exec rspec '
