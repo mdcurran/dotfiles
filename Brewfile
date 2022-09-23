@@ -48,8 +48,6 @@ cask "obsidian"
 cask "signal"
 cask "spotify"
 cask "steam"
-cask "unity"
-cask "unity-hub"
 cask "visual-studio-code"
 
 # Fonts
