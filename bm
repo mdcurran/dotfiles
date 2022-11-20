@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Ensure the Brewfile is available.
-cd $DOTFILES
+cd "$DOTFILES" || exit
 
 # Check for Homebrew installation. If not installed, then install latest
 # version. macOS comes with a system version of Ruby that can be used for this.
@@ -27,6 +27,7 @@ if ( brew bundle check; ) < /dev/null > /dev/null 2>&1; then
 else
     brew tap Homebrew/bundle;
     brew bundle;
+    brew bundle cleanup;
 fi
 
 # Clean-up and diagnose any potential problems.
