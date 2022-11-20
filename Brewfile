@@ -2,6 +2,7 @@
 cask_args appdir: "~/Applications"
 
 # Software
+brew "atuin"
 brew "bat"
 brew "benthos"
 brew "cask"
