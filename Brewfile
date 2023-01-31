@@ -43,6 +43,7 @@ brew "yarn"
 
 # Applications
 cask "cloudflare-warp"  # 1.1.1.1
+cask "dash"
 cask "discord"
 cask "docker"
 cask "flux"  # f.lux
