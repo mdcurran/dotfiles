@@ -30,3 +30,8 @@ ln -sf "$PWD"/bm "$HOME"/.local/bin
 
 # Install and manage any Homebrew-related dependencies.
 bm
+
+# Ensure installation of nix.
+if [ ! -d "/nix" ]; then
+    sh <(curl -L https://nixos.org/nix/install)
+fi
