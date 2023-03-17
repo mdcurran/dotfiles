@@ -2,6 +2,7 @@
 alias dc='docker-compose '
 alias dotfiles='cd $HOME/repositories/dotfiles'
 alias flush='killall -HUP mDNSResponder'
+alias gpg-reset='gpgconf --kill gpg-agent'
 alias hbu='git commit -m "Homebrew update"'
 alias hrg='history | rg'
 alias sudo='sudo '  # Allows aliases to be sudo'd
@@ -44,6 +45,7 @@ alias nl='note list'
 alias nrm='note rm'
 alias nmv='note mv'
 alias ncat='note cat'
+alias ndir='note dir'
 
 # Ruby
 alias be='bundle exec '

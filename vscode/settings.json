@@ -3,5 +3,40 @@
     "editor.fontLigatures": true,
     "files.autoSave": "afterDelay",
     "workbench.colorTheme": "Dracula",
-    "workbench.iconTheme": "vscode-icons",   
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.startupEditor": "none",
+    "ruby.useLanguageServer": true,
+    "ruby.useBundler": true,
+    "[ruby]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+    },
+    "ruby.format": "rubocop",
+    "[json]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        "gitlens.codeLens.scopes": [
+            "document"
+        ]
+    },
+    "[jsonnet]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.inlineSuggest.enabled": true,
+    "go.toolsManagement.autoUpdate": true,
+    "window.commandCenter": false,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "redhat.telemetry.enabled": false,
 }

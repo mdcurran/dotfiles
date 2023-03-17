@@ -5,7 +5,6 @@ export OH_MY_ZSH=$ZSH
 ZSH_THEME=dracula
 
 plugins=(
-  ag
   docker
   dotenv
   gcloud
@@ -29,7 +28,7 @@ source ~/.aliases
 export PATH="$HOME/.local/bin:$PATH"
 
 export DOTFILES="$HOME/repositories/dotfiles" # This is used by bm to find the Brewfile
-alias bf='vi $DOTFILES/Brewfile'
+alias bf='nvim $DOTFILES/Brewfile'
 
 # pyenv
 eval "$(pyenv init -)"
