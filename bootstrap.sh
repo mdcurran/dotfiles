@@ -15,6 +15,8 @@ git config --global commit.template "$HOME"/.gitmessage
 # Set the default name and email for commits.
 git config --global user.name "Max Curran"
 git config --global user.email "maxcurran96@gmail.com"
+# Ensure git uses ssh instead of HTTPS. This is particularly useful for installing vim plugins.
+git config --global --add url."git@github.com:".insteadOf "https://github.com/"
 
 # Create symlinks for .aliases and ZSH configuration files.
 ln -sf "$PWD"/.aliases "$HOME"/.aliases
@@ -30,3 +32,7 @@ ln -sf "$PWD"/bm "$HOME"/.local/bin
 
 # Install and manage any Homebrew-related dependencies.
 bm
+
+# Install any software/dependencies outside of Homebrew.
+# Generally this requires fetching a file from some server and running `sh`.
+sh "installers.sh"
