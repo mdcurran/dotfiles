@@ -39,6 +39,7 @@ brew "stern"
 brew "terraform"
 brew "vim"
 brew "yarn"
+brew "zig"
 
 # Applications
 cask "cloudflare-warp"  # 1.1.1.1
