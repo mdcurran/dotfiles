@@ -42,6 +42,7 @@ brew "yarn"
 brew "zig"
 
 # Applications
+cask "calibre"
 cask "cloudflare-warp"  # 1.1.1.1
 cask "dash"
 cask "discord"
