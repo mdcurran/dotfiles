@@ -25,6 +25,7 @@ brew "mas"  # Mac App Store manager
 brew "node"
 brew "nvm"
 brew "mdcurran/taps/note"
+brew "nats-io/nats-tools/nats"
 brew "neovim"
 brew "pass"
 brew "postgresql"

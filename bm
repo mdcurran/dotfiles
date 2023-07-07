@@ -18,6 +18,7 @@ else
     brew tap homebrew/cask;
     brew tap homebrew/cask-fonts;
     brew tap mdcurran/taps;
+    brew tap nats-io/nats-tools;
 fi
 
 # Check that the Homebrew bundle functionality is enabled, then install the
