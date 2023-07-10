@@ -52,6 +52,7 @@ cask "flux"  # f.lux
 cask "firefox"
 cask "insomnia"
 cask "iterm2"
+cask "notion"
 cask "now-tv-player"
 cask "obsidian"
 cask "rar"
