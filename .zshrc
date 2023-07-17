@@ -60,6 +60,11 @@ export GIT_EDITOR="nvim"
 # atuin
 eval "$(atuin init zsh)"
 
+# ngrok (shell completion)
+if command -v ngrok &>/dev/null; then
+  eval "$(ngrok completion)"
+fi
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/google-cloud-sdk/path.zsh.inc'; fi
 
