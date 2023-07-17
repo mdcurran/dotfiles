@@ -1,19 +1,41 @@
 {
+    "clang-format.executable": "/opt/homebrew/bin/clang-format",
+    "clang-format.style": "GNU",
+    "diffEditor.ignoreTrimWhitespace": false,
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": true,
+    "editor.inlineSuggest.enabled": true,
     "files.autoSave": "afterDelay",
+    "github.copilot.enable": {
+        "*": true,
+        // For these languages Copilot is more annoying
+        // than helpful. Either I'm proficient enough in
+        // the language, or there's better tooling
+        // available.
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "go": false
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "redhat.telemetry.enabled": false,
+    "ruby.format": "rubocop",
+    "ruby.useBundler": true,
+    "ruby.useLanguageServer": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "window.commandCenter": false,
     "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "vscode-icons",
-    "vsicons.dontShowNewVersionMessage": true,
     "workbench.startupEditor": "none",
-    "ruby.useLanguageServer": true,
-    "ruby.useBundler": true,
-    "[ruby]": {
+    "zig.zigPath": "/Users/maxcurran/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
+    "zig.zigVersion": "nightly-0.11.0-dev.3395+1e7dcaa3a",
+    "zig.zls.path": "/Users/maxcurran/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format",
         "editor.tabSize": 2,
         "editor.insertSpaces": true,
-        "editor.detectIndentation": false,
+        "editor.detectIndentation": false
     },
-    "ruby.format": "rubocop",
     "[json]": {
         "editor.tabSize": 2,
         "editor.insertSpaces": true,
@@ -31,12 +53,12 @@
         "editor.insertSpaces": true,
         "editor.detectIndentation": false,
     },
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.inlineSuggest.enabled": true,
-    "go.toolsManagement.autoUpdate": true,
-    "window.commandCenter": false,
     "[python]": {
         "editor.formatOnType": true
     },
-    "redhat.telemetry.enabled": false,
+    "[ruby]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+    },
 }
