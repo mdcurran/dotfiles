@@ -54,6 +54,9 @@ export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export PATH="/usr/local/opt/helm@2/bin:$PATH"
 export PATH="/usr/local/opt/openssl@3/bin:$PATH"
 
+# Git(Hub)
+export GIT_EDITOR="nvim"
+
 # atuin
 eval "$(atuin init zsh)"
 
