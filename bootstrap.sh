@@ -18,6 +18,10 @@ git config --global user.email "maxcurran96@gmail.com"
 # Ensure git uses ssh instead of HTTPS. This is particularly useful for installing vim plugins.
 git config --global --add url."git@github.com:".insteadOf "https://github.com/"
 
+# Exclude /scratch directories from any local git repository
+git config --global core.excludesFile '~/.gitignore.global'
+echo '/scratch' >> ~/.gitignore_global
+
 # Create symlinks for .aliases and ZSH configuration files.
 ln -sf "$PWD"/.aliases "$HOME"/.aliases
 ln -sf "$PWD"/.zshrc "$HOME"/.zshrc
