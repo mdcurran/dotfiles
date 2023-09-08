@@ -5,6 +5,7 @@ cask_args appdir: "~/Applications"
 brew "atuin"
 brew "bat"
 brew "benthos"
+brew "bun"
 brew "cask"
 brew "clang-format"
 brew "coreutils"  # Update the outdated default macOS ones

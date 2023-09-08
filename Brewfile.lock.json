@@ -1636,6 +1636,10 @@
             }
           }
         }
+      },
+      "bun": {
+        "version": "1.0.0",
+        "bottle": false
       }
     },
     "cask": {
