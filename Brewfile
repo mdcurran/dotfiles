@@ -10,6 +10,7 @@ brew "clang-format"
 brew "coreutils"  # Update the outdated default macOS ones
 brew "dive"
 brew "doctl"
+brew "duckdb"
 brew "elixir"
 brew "etcd"
 brew "fd"
