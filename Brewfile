@@ -66,6 +66,7 @@ cask "signal"
 cask "spotify"
 cask "steam"
 cask "visual-studio-code"
+cask "zoom"
 
 # Fonts
 cask "font-jetbrains-mono"
