@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Rust
 if ( rustup --version ) < /dev/null > /dev/null 2>&1; then
     echo 'rustup is already installed!'
 else
