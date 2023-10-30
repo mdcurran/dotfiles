@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+set -e
+
+read -n 1 -p "Re-building Zig & ZLS from source can take a long time. Are you sure? `echo $'\n> '`" READY
+
+if [ $READY != "Y" ]; then
+    printf "\nAborting re-build.\n"
+    exit 1
+fi
+
+printf "\nRe-building from source.\n"
+
+# Fetch the HEAD of master for zig, then build from source.
+cd "$ZIG_SOURCE_DIR/build" || exit
+
+git checkout master && git pull
+cmake ..
+make install
+
+# Do the same for ZLS, fetch HEAD of master, build an updated binary.
+cd $ZLS_SOURCE_DIR || exit
+
+git checkout master && git pull
+zig build -Doptimize=ReleaseSafe

@@ -66,14 +66,16 @@ if command -v ngrok &>/dev/null; then
 fi
 
 # Zig
-export ZIG_SOURCE_BUILD="/Users/maxcurran/repositories/zig/zig/build/stage3/bin/zig"
-export PATH="PATH=$PATH:$ZIG_SOURCE_BUILD"
-ln -sf $ZIG_SOURCE_BUILD "$HOME"/.local/bin/zig
+export ZIG_SOURCE_DIR="/Users/maxcurran/repositories/zig/zig"
+export ZIG_BINARY_OUTPUT="$ZIG_SOURCE_DIR/build/stage3/bin/zig"
+export PATH="PATH=$PATH:$ZIG_BINARY_OUTPUT"
+ln -sf $ZIG_BINARY_OUTPUT "$HOME"/.local/bin/zig
 
 # ZLS
-export ZLS_SOURCE_BUILD="/Users/maxcurran/repositories/zig/zls/zig-out/bin/zls"
-export PATH="PATH=$PATH:$ZLS_SOURCE_BUILD"
-ln -sf $ZLS_SOURCE_BUILD "$HOME"/.local/bin/zls
+export ZLS_SOURCE_DIR="/Users/maxcurran/repositories/zig/zls"
+export ZLS_BINARY_OUTPUT="$ZLS_SOURCE_DIR/zig-out/bin/zls"
+export PATH="PATH=$PATH:$ZLS_BINARY_OUTPUT"
+ln -sf $ZLS_BINARY_OUTPUT "$HOME"/.local/bin/zls
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/google-cloud-sdk/path.zsh.inc'; fi
