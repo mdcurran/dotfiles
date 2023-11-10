@@ -22,6 +22,7 @@ brew "gron"
 brew "httpie"
 brew "hugo"
 brew "jq"
+brew "kind"
 brew "kubectl"
 brew "llvm"
 brew "mas"  # Mac App Store manager
