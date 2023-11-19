@@ -20,6 +20,7 @@ else
     brew tap mdcurran/taps;
     brew tap nats-io/nats-tools;
     brew tap oven-sh/bun;
+    brew tap speakeasy-api/homebrew-tap;
 fi
 
 # Check that the Homebrew bundle functionality is enabled, then install the

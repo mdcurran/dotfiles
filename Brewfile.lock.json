@@ -2056,6 +2056,10 @@
             }
           }
         }
+      },
+      "speakeasy": {
+        "version": "1.121.1",
+        "bottle": false
       }
     },
     "cask": {
