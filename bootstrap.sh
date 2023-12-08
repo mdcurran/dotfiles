@@ -19,8 +19,9 @@ git config --global user.email "maxcurran96@gmail.com"
 git config --global --add url."git@github.com:".insteadOf "https://github.com/"
 
 # Exclude /scratch directories from any local git repository
-git config --global core.excludesFile '~/.gitignore.global'
-echo '/scratch' >> ~/.gitignore_global
+git config --global core.excludesFile "$HOME"/.gitignore.global
+echo '/_scratch' >> ~/.gitignore.global
+echo '/scratch' >> ~/.gitignore.global
 
 # Create symlinks for .aliases and ZSH configuration files.
 ln -sf "$PWD"/.aliases "$HOME"/.aliases
