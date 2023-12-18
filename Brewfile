@@ -55,6 +55,7 @@ brew "zig"
 
 # Applications
 cask "calibre"
+cask "clickhouse"
 cask "cloudflare-warp"  # 1.1.1.1
 cask "dash"
 cask "discord"
