@@ -27,4 +27,29 @@ return require("packer").startup(function(use)
 			vim.cmd("colorscheme dracula")
 		end
 	}
+
+	-- LSP Zero provides LSP support for any language required.
+	-- It has a number of dependencies to enhance the editor, such as
+	-- autocomplete, a package manager for fetching LSPs easier, etc.
+	use {
+		"VonHeikemen/lsp-zero.nvim",
+		branch = "v3.x",
+		requires = {
+			-- Mason is a package manager for neovim LSPs.
+			{"williamboman/mason.nvim"},
+			{"williamboman/mason-lspconfig.nvim"},
+			-- LSP support.
+			{"neovim/nvim-lspconfig"},
+			-- Autocompletion.
+			{"hrsh7th/nvim-cmp"},
+			{"hrsh7th/cmp-nvim-lsp"},
+			{"hrsh7th/cmp-buffer"},
+			{"hrsh7th/cmp-path"},
+			{"hrsh7th/cmp-nvim-lua"},
+			{"saadparwaiz1/cmp_luasnip"},
+			-- Code snippets.
+			{"L3MON4D3/LuaSnip"},
+			{"rafamadriz/friendly-snippets"},
+		}
+	}
 end)

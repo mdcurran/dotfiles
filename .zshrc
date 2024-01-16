@@ -80,6 +80,9 @@ ln -sf $ZLS_BINARY_OUTPUT "$HOME"/.local/bin/zls
 # krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
+# neovim
+export XDG_CONFIG_HOME="$HOME"
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/google-cloud-sdk/path.zsh.inc'; fi
 

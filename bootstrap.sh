@@ -29,7 +29,6 @@ ln -sf "$PWD"/.zshrc "$HOME"/.zshrc
 ln -sf "$PWD"/.zprofile "$HOME"/.zprofile
 
 # neovim configuration.
-export XDG_CONFIG_HOME="$HOME"
 ln -sf "$PWD"/nvim "$HOME"/nvim
 
 # Install packer.nvim
