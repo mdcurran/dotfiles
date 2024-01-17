@@ -59,4 +59,10 @@ require("lazy").setup({
             "rafamadriz/friendly-snippets",
         },
     },
+
+    -- Show line indentations.
+    {
+        "lukas-reineke/indent-blankline.nvim",
+        main = "ibl",
+    },
 })
