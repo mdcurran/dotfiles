@@ -5,17 +5,17 @@ export OH_MY_ZSH=$ZSH
 ZSH_THEME=dracula
 
 plugins=(
-	docker
-	dotenv
-	gcloud
-	git
-	golang
-	history
-	iterm2
-	kubectl
-	postgres
-	ripgrep
-	rsync
+    docker
+    dotenv
+    gcloud
+    git
+    golang
+    history
+    iterm2
+    kubectl
+    postgres
+    ripgrep
+    rsync
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -62,7 +62,7 @@ eval "$(atuin init zsh)"
 
 # ngrok (shell completion)
 if command -v ngrok &>/dev/null; then
-	eval "$(ngrok completion)"
+    eval "$(ngrok completion)"
 fi
 
 # Zig

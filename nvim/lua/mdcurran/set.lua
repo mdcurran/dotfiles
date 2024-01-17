@@ -8,9 +8,9 @@ vim.opt.wrap = false
 
 -- 4-indent tabs.
 vim.opt.tabstop = 4
-vim.opt.softtabstop = 0
+vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.expandtab = false
+vim.opt.expandtab = true
 
 -- Disable the lingering highlighting when searching a term.
 vim.opt.hlsearch = false

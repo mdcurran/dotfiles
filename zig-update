@@ -5,8 +5,8 @@ set -e
 read -n 1 -p "Re-building Zig & ZLS from source can take a long time. Are you sure? `echo $'\n> '`" READY
 
 if [ $READY != "Y" ]; then
-	printf "\nAborting re-build.\n"
-	exit 1
+    printf "\nAborting re-build.\n"
+    exit 1
 fi
 
 printf "\nRe-building from source.\n"

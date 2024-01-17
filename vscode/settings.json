@@ -1,72 +1,72 @@
 {
-	"clang-format.executable": "/opt/homebrew/bin/clang-format",
-	"clang-format.style": "GNU",
-	"cody.autocomplete.enabled": false,
-	"cody.inlineChat.enabled": false,
-	"cody.codeActions.enabled": false,
-	"diffEditor.ignoreTrimWhitespace": false,
-	"editor.fontFamily": "JetBrains Mono",
-	"editor.fontLigatures": true,
-	"editor.inlineSuggest.enabled": true,
-	"editor.inlineSuggest.suppressSuggestions": true,
-	"files.autoSave": "afterDelay",
-	"github.copilot.enable": {
-		"*": true,
-		// For these languages Copilot is more annoying
-		// than helpful. Either I'm proficient enough in
-		// the language, or there's better tooling
-		// available.
-		"yaml": false,
-		"plaintext": false,
-		"markdown": false,
-		"go": false
-	},
-	"go.toolsManagement.autoUpdate": true,
-	"redhat.telemetry.enabled": false,
-	"ruby.format": "rubocop",
-	"ruby.useBundler": true,
-	"ruby.useLanguageServer": true,
-	"rust-analyzer.inlayHints.chainingHints.enable": false,
-	"rust-analyzer.inlayHints.typeHints.enable": false,
-	"rust-analyzer.inlayHints.renderColons": false,
-	"svelte.enable-ts-plugin": true,
-	"vsicons.dontShowNewVersionMessage": true,
-	"window.commandCenter": false,
-	"workbench.colorTheme": "Dracula",
-	"workbench.iconTheme": "vscode-icons",
-	"workbench.startupEditor": "none",
-	"zig.path": "/Users/maxcurran/.local/bin/zig",
-	"zig.zls.path": "/Users/maxcurran/.local/bin/zls",
-	"zig.initialSetupDone": true,
-	"[c]": {
-		"editor.defaultFormatter": "xaver.clang-format",
-		"editor.tabSize": 2,
-		"editor.insertSpaces": true,
-		"editor.detectIndentation": false
-	},
-	"[json]": {
-		"editor.tabSize": 2,
-		"editor.insertSpaces": true,
-		"editor.detectIndentation": false,
-		"editor.quickSuggestions": {
-			"strings": true
-		},
-		"editor.suggest.insertMode": "replace",
-		"gitlens.codeLens.scopes": [
-			"document"
-		]
-	},
-	"[jsonnet]": {
-		"editor.tabSize": 2,
-		"editor.insertSpaces": true,
-		"editor.detectIndentation": false,
-	},
-	"[python]": {
-		"editor.formatOnType": true
-	},
-	"[ruby]": {
-		"editor.tabSize": 2,
-		"editor.insertSpaces": true,
-		"editor.detectIndentation": false,
-	}
+    "clang-format.executable": "/opt/homebrew/bin/clang-format",
+    "clang-format.style": "GNU",
+    "cody.autocomplete.enabled": false,
+    "cody.inlineChat.enabled": false,
+    "cody.codeActions.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "files.autoSave": "afterDelay",
+    "github.copilot.enable": {
+        "*": true,
+        // For these languages Copilot is more annoying
+        // than helpful. Either I'm proficient enough in
+        // the language, or there's better tooling
+        // available.
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "go": false
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "redhat.telemetry.enabled": false,
+    "ruby.format": "rubocop",
+    "ruby.useBundler": true,
+    "ruby.useLanguageServer": true,
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "rust-analyzer.inlayHints.renderColons": false,
+    "svelte.enable-ts-plugin": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "window.commandCenter": false,
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "none",
+    "zig.path": "/Users/maxcurran/.local/bin/zig",
+    "zig.zls.path": "/Users/maxcurran/.local/bin/zls",
+    "zig.initialSetupDone": true,
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format",
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false
+    },
+    "[json]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        "gitlens.codeLens.scopes": [
+            "document"
+        ]
+    },
+    "[jsonnet]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "[ruby]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+    }
 }
