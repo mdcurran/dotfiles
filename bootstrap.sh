@@ -35,6 +35,9 @@ ln -sf "$PWD"/.zprofile "$HOME"/.zprofile
 # neovim configuration.
 ln -sf "$PWD"/nvim "$HOME"/nvim
 
+# WezTerm configuration
+ln -sf "$PWD"/wezterm/wezterm.lua "$HOME"/.wezterm.lua
+
 # Install packer.nvim
 git clone --depth 1 https://github.com/wbthomason/packer.nvim "$HOME"/.local/share/nvim/site/pack/packer/start/packer.nvim
 
