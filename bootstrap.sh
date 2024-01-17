@@ -25,7 +25,7 @@ echo '/scratch' >> ~/.gitignore.global
 
 # Ensure all git commits are signed by a GPG key.
 git config --global commit.gpgsign true
-git config --global user.signingkey 7304C155A8230E5E
+git config --global user.signingkey "$(pass Personal/gpg_signing_key)"
 
 # Create symlinks for .aliases and ZSH configuration files.
 ln -sf "$PWD"/.aliases "$HOME"/.aliases
