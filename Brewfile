@@ -60,7 +60,6 @@ brew "zig"
 # Applications
 cask "calibre"
 cask "clickhouse"
-cask "cloudflare-warp"  # 1.1.1.1
 cask "dash"
 cask "discord"
 cask "docker"
@@ -70,7 +69,6 @@ cask "insomnia"
 cask "iterm2"
 cask "ngrok"
 cask "notion"
-cask "now-tv-player"
 cask "obsidian"
 cask "postman"
 cask "rar"
@@ -79,6 +77,7 @@ cask "slack"
 cask "spotify"
 cask "steam"
 cask "visual-studio-code"
+cask "wezterm"
 cask "zoom"
 
 # Fonts
