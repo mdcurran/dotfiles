@@ -38,9 +38,6 @@ ln -sf "$PWD"/nvim "$HOME"/nvim
 # WezTerm configuration
 ln -sf "$PWD"/wezterm/wezterm.lua "$HOME"/.wezterm.lua
 
-# Install packer.nvim
-git clone --depth 1 https://github.com/wbthomason/packer.nvim "$HOME"/.local/share/nvim/site/pack/packer/start/packer.nvim
-
 # Source these during bootstrapping to reflect changes in the current shell session.
 source "$HOME"/.zshrc "$HOME"/.zprofile
 
