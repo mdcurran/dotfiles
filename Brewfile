@@ -28,6 +28,7 @@ brew "jq"
 brew "kind"
 brew "kubectl"
 brew "llvm"
+brew "lua-language-server"
 brew "mas"  # Mac App Store manager
 brew "node"
 brew "nvm"
