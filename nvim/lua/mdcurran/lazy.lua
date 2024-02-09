@@ -65,4 +65,10 @@ require("lazy").setup({
         "lukas-reineke/indent-blankline.nvim",
         main = "ibl",
     },
+
+    -- Git decorations. Shows which lines in a file have been modified, added
+    -- or deleted.
+    {
+        "lewis6991/gitsigns.nvim",
+    },
 })
