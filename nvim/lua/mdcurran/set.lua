@@ -12,6 +12,13 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
+-- For Go source files, tabs should not be expanded. This matches the output
+-- produced by go fmt.
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "go",
+    command = "setlocal noexpandtab",
+})
+
 -- Disable the lingering highlighting when searching a term.
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
