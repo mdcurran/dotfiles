@@ -18,6 +18,7 @@ else
     brew tap homebrew/cask;
     brew tap homebrew/cask-fonts;
     brew tap mdcurran/taps;
+    brew tap modularml/packages;
     brew tap nats-io/nats-tools;
     brew tap oven-sh/bun;
     brew tap speakeasy-api/homebrew-tap;
