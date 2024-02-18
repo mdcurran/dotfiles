@@ -6,6 +6,8 @@ if wezterm.config_builder then
     config = wezterm.config_builder()
 end
 
+config.automatically_reload_config = true
+
 config.color_scheme = "Dracula (Official)"
 -- These settings give a more "native" macOS feel to wezterm.
 config.tab_bar_at_bottom = true
@@ -20,12 +22,19 @@ config.keys = {
     {
         key = "[",
         mods = "CMD",
-        action = wezterm.action.ActivatePaneDirection "Left",
+        action = wezterm.action.ActivatePaneDirection "Prev",
     },
     {
         key = "]",
         mods = "CMD",
-        action = wezterm.action.ActivatePaneDirection "Right",
+        action = wezterm.action.ActivatePaneDirection "Next",
+    },
+    -- Cascading tab closures. If 2+ tabs are open, close the current tab. If
+    -- there is only 1 tab then close the entire window.
+    {
+        key = "w",
+        mods = "CMD",
+        action = wezterm.action.CloseCurrentPane { confirm = false },
     },
 }
 
