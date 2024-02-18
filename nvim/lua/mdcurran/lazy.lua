@@ -71,4 +71,11 @@ require("lazy").setup({
     {
         "lewis6991/gitsigns.nvim",
     },
+
+    -- Automatic completion of character pairs (brackets, parentheses, etc).
+    -- Also allows for correct indentation of tabs on carriage return.
+    {
+        "windwp/nvim-autopairs",
+        opts = {},
+    },
 })
