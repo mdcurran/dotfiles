@@ -15,6 +15,11 @@ config.use_fancy_tab_bar = false
 config.window_decorations = "RESIZE"
 config.native_macos_fullscreen_mode = true
 
+config.colors = {
+    selection_fg = "black",
+    selection_bg = "#FFFACD",
+}
+
 config.font = wezterm.font("JetBrains Mono")
 config.font_size = 13
 
