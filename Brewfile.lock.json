@@ -1213,7 +1213,7 @@
         }
       },
       "mdcurran/taps/note": {
-        "version": "0.1.0",
+        "version": "0.2.0",
         "bottle": false
       },
       "nats-io/nats-tools/nats": {
@@ -2293,6 +2293,10 @@
       "modularml/packages/modular": {
         "version": "0.4.1",
         "bottle": false
+      },
+      "modular": {
+        "version": "0.4.1",
+        "bottle": false
       }
     },
     "cask": {
@@ -2506,7 +2510,7 @@
   "system": {
     "macos": {
       "monterey": {
-        "HOMEBREW_VERSION": "4.2.8-158-g5d3fae3",
+        "HOMEBREW_VERSION": "4.2.9-42-gc355461",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "13.3.0.0.1.1645755326",
