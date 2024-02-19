@@ -78,4 +78,11 @@ require("lazy").setup({
         "windwp/nvim-autopairs",
         opts = {},
     },
+
+    -- Hovering LSP signature information. Useful when typing to have the
+    -- arguments in sight.
+    {
+        "ray-x/lsp_signature.nvim",
+        event = "VeryLazy",
+    },
 })
