@@ -1,3 +1,7 @@
+-- Disable netrw so it doesn't interfere with the neo-tree plugin.
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- Add line numbers to the margin and show relative line numbers above and
 -- below. Jump multiple lines using <number><direction>.
 vim.opt.nu = true
