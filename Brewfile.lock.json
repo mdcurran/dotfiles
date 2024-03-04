@@ -134,7 +134,7 @@
         }
       },
       "bun": {
-        "version": "1.0.29",
+        "version": "1.0.30",
         "bottle": false
       },
       "cask": {
@@ -1891,7 +1891,7 @@
         }
       },
       "speakeasy": {
-        "version": "1.200.0",
+        "version": "1.200.1",
         "bottle": false
       },
       "sqlc": {
@@ -2510,7 +2510,7 @@
   "system": {
     "macos": {
       "monterey": {
-        "HOMEBREW_VERSION": "4.2.10-106-g4e65af0",
+        "HOMEBREW_VERSION": "4.2.11-21-gcf7c093",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "13.3.0.0.1.1645755326",
