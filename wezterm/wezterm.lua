@@ -41,6 +41,13 @@ config.keys = {
         mods = "CMD",
         action = wezterm.action.CloseCurrentPane { confirm = false },
     },
+    -- Clears scrollback and leaves a prompt line as the top, first line in a
+    -- pane.
+    {
+        key = "k",
+        mods = "CMD",
+        action = wezterm.action.ClearScrollback "ScrollbackAndViewport",
+    },
 }
 
 -- Adds a battery indicator and clock to bottom-right status bar.
