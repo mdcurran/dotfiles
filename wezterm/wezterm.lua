@@ -14,6 +14,11 @@ config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
 config.window_decorations = "RESIZE"
 config.native_macos_fullscreen_mode = true
+-- By default, Wezterm does not support Left-Option being used for composition
+-- effects (i.e. OPT+3 = "#"). This is bound to Right-Option. Swap the
+-- behaviour for both modifiers around.
+config.send_composed_key_when_left_alt_is_pressed = true
+config.send_composed_key_when_right_alt_is_pressed = false
 
 config.colors = {
     selection_fg = "black",
