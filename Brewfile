@@ -80,6 +80,7 @@ cask "spotify"
 cask "steam"
 cask "visual-studio-code"
 cask "wezterm"
+cask "zed"
 cask "zoom"
 
 # Fonts
