@@ -90,4 +90,10 @@ require("lazy").setup({
     {
         "f-person/git-blame.nvim"
     },
+
+    -- Shortcuts for easy line commenting,
+    {
+        "numToStr/Comment.nvim",
+        lazy = false,
+    },
 })
