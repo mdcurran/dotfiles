@@ -85,4 +85,9 @@ require("lazy").setup({
         "ray-x/lsp_signature.nvim",
         event = "VeryLazy",
     },
+
+    -- Inline git blame information.
+    {
+        "f-person/git-blame.nvim"
+    },
 })
