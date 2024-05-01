@@ -44,7 +44,6 @@ source "$HOME"/.zshrc "$HOME"/.zprofile
 # Create ~/.local/bin if it doesn't exist already, and create the symlink for bm.
 mkdir -p "$HOME"/.local/bin
 ln -sf "$PWD"/bm "$HOME"/.local/bin
-ln -sf "$PWD"/zig-update "$HOME"/.local/bin
 
 # Install and manage any Homebrew-related dependencies.
 bm

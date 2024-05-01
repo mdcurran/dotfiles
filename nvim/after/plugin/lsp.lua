@@ -14,7 +14,8 @@ require("mason-lspconfig").setup {
         "eslint",
         "gopls",
         "lua_ls",
-        "rust_analyzer"
+        "rust_analyzer",
+        "zls",
     },
     handlers = {
         lsp_zero.default_setup,

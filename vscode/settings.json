@@ -35,9 +35,6 @@
     "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "none",
-    "zig.path": "/Users/maxcurran/.local/bin/zig",
-    "zig.zls.path": "/Users/maxcurran/.local/bin/zls",
-    "zig.initialSetupDone": true,
     "[c]": {
         "editor.defaultFormatter": "xaver.clang-format",
         "editor.tabSize": 2,

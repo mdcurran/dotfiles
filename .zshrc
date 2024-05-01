@@ -65,18 +65,6 @@ if command -v ngrok &>/dev/null; then
     eval "$(ngrok completion)"
 fi
 
-# Zig
-export ZIG_SOURCE_DIR="/Users/maxcurran/repositories/zig/zig"
-export ZIG_BINARY_OUTPUT="$ZIG_SOURCE_DIR/build/stage3/bin/zig"
-export PATH="PATH=$PATH:$ZIG_BINARY_OUTPUT"
-ln -sf $ZIG_BINARY_OUTPUT "$HOME"/.local/bin/zig
-
-# ZLS
-export ZLS_SOURCE_DIR="/Users/maxcurran/repositories/zig/zls"
-export ZLS_BINARY_OUTPUT="$ZLS_SOURCE_DIR/zig-out/bin/zls"
-export PATH="PATH=$PATH:$ZLS_BINARY_OUTPUT"
-ln -sf $ZLS_BINARY_OUTPUT "$HOME"/.local/bin/zls
-
 # krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
