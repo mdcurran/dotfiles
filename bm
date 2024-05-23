@@ -11,18 +11,13 @@ else
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 fi
 
-# Install the Cask extension for Homebrew (if not already installed).
-if ( brew cask --version; ) < /dev/null > /dev/null 2>&1; then
-    echo 'Caskroom tapped already'
-else
-    brew tap homebrew/cask;
-    brew tap homebrew/cask-fonts;
-    brew tap mdcurran/taps;
-    brew tap modularml/packages;
-    brew tap nats-io/nats-tools;
-    brew tap oven-sh/bun;
-    brew tap speakeasy-api/homebrew-tap;
-fi
+# Tap any third-party repositories.
+brew tap homebrew/cask;
+brew tap mdcurran/taps;
+brew tap modularml/packages;
+brew tap nats-io/nats-tools;
+brew tap oven-sh/bun;
+brew tap speakeasy-api/homebrew-tap;
 
 # Check that the Homebrew bundle functionality is enabled, then install the
 # dependencies listed in the Brewfile.
@@ -30,11 +25,12 @@ if ( brew bundle check; ) < /dev/null > /dev/null 2>&1; then
     echo 'Brewfiles enabled'
 else
     brew tap Homebrew/bundle;
-    brew bundle;
-    brew bundle cleanup;
 fi
 
+# Generate the lock file.
+brew bundle;
+
 # Clean-up and diagnose any potential problems.
-brew cleanup && brew doctor
+brew cleanup && brew doctor;
 
 exit 0;

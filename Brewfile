@@ -59,7 +59,6 @@ brew "yq"
 brew "zig"
 
 # Applications
-cask "calibre"
 cask "clickhouse"
 cask "dash"
 cask "discord"
