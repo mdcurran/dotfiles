@@ -86,4 +86,5 @@ cask "font-jetbrains-mono"
 
 # Mac App Store
 mas "Magnet", id: 441258766
+mas "Tailscale", id: 1475387142
 mas "Things 3", id: 904280696
