@@ -34,6 +34,8 @@ alias kgdyaml='kubectl get deployment -o yaml'
 alias kgnsyaml='kubectl get ns -o yaml'
 alias kgpo='kubectl get pods'
 alias kgpoyaml='kubectl get pods -o yaml'
+alias kgss='kubectl get statefulset'
+alias kgssy='kubectl get statefulset -o yaml'
 alias kgsvc='kubectl get svc'
 alias kgsvcyaml='kubectl get svc -o yaml'
 
