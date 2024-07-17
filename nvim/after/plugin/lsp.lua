@@ -14,6 +14,7 @@ require("mason-lspconfig").setup {
         "eslint",
         "gopls",
         "lua_ls",
+        "nim_langserver",
         "rust_analyzer",
         "zls",
     },

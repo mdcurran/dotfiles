@@ -37,6 +37,7 @@ brew "lua-language-server"
 brew "luarocks"
 brew "mas"  # Mac App Store manager
 brew "modular"
+brew "nim"
 brew "node"
 brew "nvm"
 brew "mdcurran/taps/note"
