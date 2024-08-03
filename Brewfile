@@ -39,7 +39,6 @@ brew "mas"  # Mac App Store manager
 brew "modular"
 brew "nim"
 brew "node"
-brew "nvm"
 brew "mdcurran/taps/note"
 brew "nats-io/nats-tools/nats"
 brew "nats-server"
