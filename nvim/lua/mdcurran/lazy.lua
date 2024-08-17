@@ -91,7 +91,14 @@ require("lazy").setup({
         "f-person/git-blame.nvim"
     },
 
-    -- Shortcuts for easy line commenting,
+    -- Hotkey-based buffer hooks/code navigation.
+    {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        dependencies = { "nvim-lua/plenary.nvim" },
+    },
+
+   -- Shortcuts for easy line commenting,
     {
         "numToStr/Comment.nvim",
         lazy = false,

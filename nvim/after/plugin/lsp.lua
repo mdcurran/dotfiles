@@ -3,8 +3,12 @@ local lsp_zero = require("lsp-zero")
 lsp_zero.on_attach(function(_, bufnr)
     local opts = {buffer = bufnr, remap = false}
 
+    -- Jump to the definition of a symbol.
     vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
+    -- Displays hover information about a symbol.
     vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
+    -- Opens a quickfix window with all references of a symbol.
+    vim.keymap.set("n", "gr", function() vim.lsp.buf.references() end, opts)
 end)
 
 require("mason").setup{}
