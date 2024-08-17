@@ -86,6 +86,18 @@ require("lazy").setup({
         event = "VeryLazy",
     },
 
+    -- Render Markdown documents in a browser.
+    {
+        "iamcco/markdown-preview.nvim",
+        cmd = {
+            "MarkdownPreviewToggle",
+            "MarkdownPreview",
+            "MarkdownPreviewStop"
+        },
+        ft = { "markdown" },
+        build = function() vim.fn["mkdp#util#install"]() end,
+    },
+
     -- Inline git blame information.
     {
         "f-person/git-blame.nvim"
@@ -98,7 +110,7 @@ require("lazy").setup({
         dependencies = { "nvim-lua/plenary.nvim" },
     },
 
-   -- Shortcuts for easy line commenting,
+    -- Shortcuts for easy line commenting.
     {
         "numToStr/Comment.nvim",
         lazy = false,
