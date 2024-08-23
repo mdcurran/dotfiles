@@ -64,7 +64,6 @@ brew "zig"
 
 # Applications
 cask "adobe-digital-editions"
-cask "calibre"
 cask "clickhouse"
 cask "dash"
 cask "discord"
