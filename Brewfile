@@ -69,6 +69,7 @@ cask "dash"
 cask "discord"
 cask "flux"  # f.lux
 cask "firefox"
+cask "gamemaker"
 cask "insomnia"
 cask "ngrok"
 cask "notion"
