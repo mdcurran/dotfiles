@@ -3,11 +3,6 @@
 # Sets the current directory in the process to the dotfiles directory.
 cd "$(dirname "${BASH_SOURCE[0]}")" || exit
 
-# Ensure installation of oh-my-zsh.
-if [ ! -d "$HOME/.oh-my-zsh" ]; then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-fi
-
 # Create a symlink for .gitmessage and set the contents of ~/.gitmessage as the commit template.
 ln -sf "$PWD"/.gitmessage "$HOME"/.gitmessage
 git config --global commit.template "$HOME"/.gitmessage

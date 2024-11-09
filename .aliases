@@ -13,16 +13,26 @@ alias watch='watch '  # Allows watch to work with aliases, e.g. 'watch kgpo'
 alias shf="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hhf="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
-# Git (ones not defined in the oh-my-zsh plugin)
+# Directory-related
+alias l='ls -lah'
+
+# Git
+alias g='git'
+alias ga='git add'
 alias gbr='git branch'
 alias gbrd='git branch -d'
 alias gci='git commit'
+alias gcim='git commit -m'
 alias gco='git checkout'
 alias gcob='git checkout -b'
-alias glog='git log'
+alias gd='git diff'
+alias gds='git diff --staged'
+alias glg='git log --stat'
+alias glog='git log --oneline --decorate --graph'
 alias gp='git push'
 alias gpo='git push origin'
 alias goops='git commit --amend --no-edit && git push --force-with-lease'
+alias gst='git status'
 
 # Kubernetes (ones not defined in the oh-my-zsh plugin)
 alias k8s-ns='kubectl config set-context --current --namespace'

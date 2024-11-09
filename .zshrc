@@ -1,28 +1,9 @@
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-export OH_MY_ZSH=$ZSH
-
-ZSH_THEME=dracula
-
-plugins=(
-    docker
-    dotenv
-    gcloud
-    git
-    golang
-    history
-    iterm2
-    kubectl
-    postgres
-    ripgrep
-    rsync
-)
-
-source $ZSH/oh-my-zsh.sh
-
 # Custom configuration; involves enabling the bm executable and bf file alias.
 # Source the relevant files at the start of a new Shell session.
 source ~/.aliases
+
+# Load autocompletions.
+autoload -U compinit; compinit
 
 # Add ~/.local/bin to the PATH to enable to the bm executable
 export PATH="$HOME/.local/bin:$PATH"
@@ -54,11 +35,6 @@ export GIT_EDITOR="nvim"
 
 # atuin
 eval "$(atuin init zsh)"
-
-# ngrok (shell completion)
-if command -v ngrok &>/dev/null; then
-    eval "$(ngrok completion)"
-fi
 
 # krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
