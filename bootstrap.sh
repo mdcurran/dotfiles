@@ -33,6 +33,10 @@ ln -sf "$PWD"/nvim "$HOME"/nvim
 # WezTerm configuration
 ln -sf "$PWD"/wezterm/wezterm.lua "$HOME"/.wezterm.lua
 
+# starship configuration
+mkdir "$HOME"/.config
+ln -sf "$PWD"/starship/starship.toml "$HOME"/.config/starship.toml
+
 # Source these during bootstrapping to reflect changes in the current shell session.
 source "$HOME"/.zshrc "$HOME"/.zprofile
 
