@@ -18,6 +18,7 @@ brew tap mdcurran/taps;
 brew tap nats-io/nats-tools;
 brew tap oven-sh/bun;
 brew tap speakeasy-api/homebrew-tap;
+brew tap unisonweb/unison;
 
 # Check that the Homebrew bundle functionality is enabled, then install the
 # dependencies listed in the Brewfile.
@@ -27,9 +28,8 @@ else
     brew tap Homebrew/bundle;
 fi
 
-# Generate the lock file. Delete the existing lock file first as otherwise
-# brew bundle won't generate an accurate snapshot of current installations.
-rm Brewfile.lock.json && brew bundle;
+# Install or upgrade.
+brew bundle;
 
 # Clean-up and diagnose any potential problems.
 brew cleanup && brew doctor;
