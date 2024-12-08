@@ -15,12 +15,19 @@ git config --global --add url."git@github.com:".insteadOf "https://github.com/"
 
 # Exclude /scratch directories from any local git repository
 git config --global core.excludesFile "$HOME"/.gitignore.global
-echo '/_scratch' >> ~/.gitignore.global
-echo '/scratch' >> ~/.gitignore.global
+if [ ! -f "$HOME"/.gitignore.global ]; then
+    echo '/_scratch' >> ~/.gitignore.global
+    echo '/scratch' >> ~/.gitignore.global
+fi
 
 # Ensure all git commits are signed by a GPG key.
 git config --global commit.gpgsign true
 git config --global user.signingkey "$(pass Personal/gpg_signing_key)"
+
+# Additional git configuration.
+git config --global branch.sort -committerdate
+git config --global column.ui auto
+git config --global rerere.enabled true
 
 # Create symlinks for .aliases and ZSH configuration files.
 ln -sf "$PWD"/.aliases "$HOME"/.aliases
@@ -34,7 +41,7 @@ ln -sf "$PWD"/nvim "$HOME"/nvim
 ln -sf "$PWD"/wezterm/wezterm.lua "$HOME"/.wezterm.lua
 
 # starship configuration
-mkdir "$HOME"/.config
+mkdir -p "$HOME"/.config
 ln -sf "$PWD"/starship/starship.toml "$HOME"/.config/starship.toml
 
 # Source these during bootstrapping to reflect changes in the current shell session.
