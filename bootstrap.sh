@@ -26,7 +26,6 @@ git config --global user.signingkey "$(pass Personal/gpg_signing_key)"
 
 # Additional git configuration.
 git config --global branch.sort -committerdate
-git config --global column.ui auto
 git config --global rerere.enabled true
 
 # Create symlinks for .aliases and ZSH configuration files.
