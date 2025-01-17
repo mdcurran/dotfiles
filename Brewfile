@@ -42,7 +42,7 @@ brew "nats-io/nats-tools/nats"
 brew "nats-server"
 brew "neovim"
 brew "odin"
-brew "openjdk@17"
+brew "openjdk"
 brew "pass"
 brew "pdm"
 brew "perl"
@@ -67,7 +67,6 @@ brew "zig"
 
 # Applications
 cask "adobe-digital-editions"
-cask "clickhouse"
 cask "dash"
 cask "discord"
 cask "flux"  # f.lux

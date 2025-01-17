@@ -45,6 +45,9 @@ export XDG_CONFIG_HOME="$HOME"
 # bat
 export BAT_THEME="Dracula"
 
+# openjdk
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
 # Make sure we can use the Homebrew-installed llvm with the Rust compiler.
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"

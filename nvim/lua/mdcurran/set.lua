@@ -1,7 +1,6 @@
--- Add line numbers to the margin and show relative line numbers above and
--- below. Jump multiple lines using <number><direction>.
+-- Add line numbers to the margin.
 vim.opt.nu = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 
 -- Disable line wrapping.
 vim.opt.wrap = false
