@@ -55,4 +55,6 @@ bm
 
 # Install any software/dependencies outside of Homebrew.
 # Generally this requires fetching a file from some server and running `sh`.
-sh "installers.sh"
+for FILENAME in scripts/*.sh; do
+    sh $FILENAME;
+done

@@ -18,7 +18,6 @@ brew tap mdcurran/taps;
 brew tap nats-io/nats-tools;
 brew tap oven-sh/bun;
 brew tap speakeasy-api/homebrew-tap;
-brew tap unisonweb/unison;
 
 # Check that the Homebrew bundle functionality is enabled, then install the
 # dependencies listed in the Brewfile.
@@ -35,6 +34,8 @@ brew bundle;
 brew cleanup && brew doctor;
 
 # Install any non-Homebrew-managed software.
-sh installers.sh;
+for FILENAME in scripts/*.sh; do
+    sh $FILENAME;
+done
 
 exit 0;

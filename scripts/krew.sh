@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
 
-# Rust
-if ( rustup --version ) < /dev/null > /dev/null 2>&1; then
-    echo 'rustup is already installed!'
-else
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-fi
-
 # krew plugin manager for kubectl. Check that we actually have krew installed
 # then ensure each plugin is available.
 if ( kubectl krew ) < /dev/null > /dev/null 2>&1; then
