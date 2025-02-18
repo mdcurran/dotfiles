@@ -63,6 +63,7 @@ brew "zig"
 
 # Applications
 cask "adobe-digital-editions"
+cask "clickhouse"
 cask "dash"
 cask "discord"
 cask "flux"  # f.lux
