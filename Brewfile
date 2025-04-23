@@ -64,6 +64,7 @@ brew "zig"
 # Applications
 cask "adobe-digital-editions"
 cask "clickhouse"
+cask "cursor"
 cask "dash"
 cask "discord"
 cask "flux"  # f.lux
