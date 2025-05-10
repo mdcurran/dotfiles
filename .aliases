@@ -7,7 +7,7 @@ alias hbu='git commit -m "Homebrew update"'
 alias hrg='history | rg'
 alias sudo='sudo '  # Allows aliases to be sudo'd
 alias ugh='killall ControlStrip'
-alias watch='watch '  # Allows watch to work with aliases, e.g. 'watch kgpo'
+alias watch='viddy '  # Allows watch to work with aliases, e.g. 'watch kgpo'
 
 # Hiding and showing files in Finder
 alias shf="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
