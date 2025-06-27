@@ -4,6 +4,7 @@ cask_args appdir: "~/Applications"
 # Software
 brew "atuin"
 brew "bat"
+brew "oven-sh/bun/bun"
 brew "cask"
 brew "clang-format"
 brew "cmake"

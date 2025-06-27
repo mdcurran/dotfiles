@@ -48,6 +48,10 @@ export BAT_THEME="Dracula"
 # openjdk
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 # Make sure we can use the Homebrew-installed llvm with the Rust compiler.
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
