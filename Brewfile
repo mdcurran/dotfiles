@@ -72,6 +72,7 @@ cask "discord"
 cask "flux"  # f.lux
 cask "firefox"
 cask "insomnia"
+cask "mullvad-vpn"
 cask "ngrok"
 cask "notion"
 cask "obsidian"
