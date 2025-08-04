@@ -50,6 +50,9 @@ source "$HOME"/.zshrc "$HOME"/.zprofile
 mkdir -p "$HOME"/.local/bin
 ln -sf "$PWD"/bm "$HOME"/.local/bin
 
+# Disable double-space period globally.
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+
 # Install and manage any Homebrew-related dependencies.
 bm
 
