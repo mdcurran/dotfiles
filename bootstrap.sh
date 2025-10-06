@@ -43,6 +43,10 @@ ln -sf "$PWD"/wezterm/wezterm.lua "$HOME"/.wezterm.lua
 mkdir -p "$HOME"/.config
 ln -sf "$PWD"/starship/starship.toml "$HOME"/.config/starship.toml
 
+# atuin configuration
+mkdir -p "$HOME"/atuin
+ln -sf "$PWD"/atuin/config.toml "$HOME"/atuin/config.toml
+
 # Source these during bootstrapping to reflect changes in the current shell session.
 source "$HOME"/.zshrc "$HOME"/.zprofile
 
