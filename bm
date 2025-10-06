@@ -30,4 +30,7 @@ for FILENAME in scripts/*.sh; do
     sh $FILENAME;
 done
 
+# Remove quarantine attribute from Homebrew-managed ClickHouse installation.
+xattr -d com.apple.quarantine /opt/homebrew/bin/clickhouse
+
 exit 0;
