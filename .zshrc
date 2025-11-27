@@ -55,6 +55,10 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # Make sure we can use the Homebrew-installed llvm with the Rust compiler.
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+# Use Homebrew clang instead of Apple clang by default.
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+# Force cmake to use llvm.
+export CMAKE_PREFIX_PATH="/opt/homebrew/opt/llvm"
 
 # starship.
 export STARSHIP_CONFIG="$HOME/.config/starship.toml"
