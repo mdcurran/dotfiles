@@ -33,6 +33,10 @@ ln -sf "$PWD"/.aliases "$HOME"/.aliases
 ln -sf "$PWD"/.zshrc "$HOME"/.zshrc
 ln -sf "$PWD"/.zprofile "$HOME"/.zprofile
 
+# ghostty configuration.
+mkdir -p "$HOME"/ghostty
+ln -sf "$PWD"/ghostty "$HOME"/ghostty
+
 # neovim configuration.
 ln -sf "$PWD"/nvim "$HOME"/nvim
 
