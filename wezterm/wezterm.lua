@@ -39,6 +39,11 @@ config.keys = {
         mods = "CMD",
         action = wezterm.action.ActivatePaneDirection "Next",
     },
+    {
+        key = "r",
+        mods = "CMD",
+        action = wezterm.action.RotatePanes "Clockwise",
+    },
     -- Cascading tab closures. If 2+ tabs are open, close the current tab. If
     -- there is only 1 tab then close the entire window.
     {
