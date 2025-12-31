@@ -28,6 +28,14 @@ config.colors = {
 config.font = wezterm.font("JetBrains Mono")
 config.font_size = 13
 
+-- Define a leader key to avoid conflicts with other combinations of
+-- modifer + key.
+config.leader = {
+    key = "l",
+    mods = "CTRL",
+    timeout_milliseconds = 1000,
+}
+
 config.keys = {
     {
         key = "[",
@@ -58,6 +66,31 @@ config.keys = {
         mods = "CMD",
         action = wezterm.action.ClearScrollback "ScrollbackAndViewport",
     },
+        -- Define a key table for moving tabs. We want to establish a key sequence
+    -- whereby we activate the leader key, and active the moving tabs key table
+    -- which is dynamically populated from 1..8.
+    {
+        key = "m",
+        mods = "LEADER",
+        action = wezterm.action.ActivateKeyTable {
+            name = "move_tabs",
+            timeout_milliseconds = 1000,
+        },
+    },
+}
+
+config.key_tables = {
+    -- Populate the move_tabs key table from 1..8.
+    move_tabs = (function()
+        local table = {}
+        for i = 1, 8 do
+            table[i] = {
+                key = tostring(i),
+                action = wezterm.action.MoveTab(i - 1),
+            }
+        end
+        return table
+    end)(),
 }
 
 -- Adds a battery indicator and clock to bottom-right status bar.
