@@ -66,7 +66,7 @@ config.keys = {
         mods = "CMD",
         action = wezterm.action.ClearScrollback "ScrollbackAndViewport",
     },
-        -- Define a key table for moving tabs. We want to establish a key sequence
+    -- Define a key table for moving tabs. We want to establish a key sequence
     -- whereby we activate the leader key, and active the moving tabs key table
     -- which is dynamically populated from 1..8.
     {
