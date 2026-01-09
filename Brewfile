@@ -53,7 +53,6 @@ brew "nats-server"
 brew "neovim"
 brew "odin"
 brew "openjdk"
-brew "orbstack"
 brew "pass"
 brew "pdm"
 brew "perl"
@@ -79,19 +78,15 @@ brew "yq"
 brew "zig"
 
 # Applications
-cask "adobe-digital-editions"
 cask "clickhouse"
-cask "cursor"
 cask "dash"
 cask "discord"
 cask "flux"  # f.lux
 cask "firefox"
 cask "ghostty"
-cask "insomnia"
 cask "mullvad-vpn"
 cask "ngrok"
-cask "notion"
-cask "obsidian"
+cask "orbstack"
 cask "rar"
 cask "signal"
 cask "spotify"
@@ -106,4 +101,3 @@ cask "font-jetbrains-mono"
 # Mac App Store
 mas "Magnet", id: 441258766
 mas "Tailscale", id: 1475387142
-mas "Things 3", id: 904280696
